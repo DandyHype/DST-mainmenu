@@ -1,0 +1,853 @@
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+/* Letter Spacing */ 
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* *************************** */
+
+i{
+
+}
+
+
+/* Header Letters */ 
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* *************************** */
+
+.A {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -394px -90px;
+    background-size: 512px 256px;
+    width: 13px;
+    height: 18px;
+	margin-top: 1px;
+}
+
+.U {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -163px -72px;
+	background-size: 512px 256px;
+	width: 13px;
+	height: 19px;
+	margin-top: 1px;
+}
+
+.N{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -162px -92px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 18px;
+	margin-top: 1px;
+}
+
+.a {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -355px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	margin-top:4px;
+	left:-2px;
+}
+
+.b{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -375px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	margin-top:1px;
+	left:-1px;
+}
+
+.d{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -327px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	margin-top:1px;
+	left:-1px;
+}
+
+.e {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -379px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.i{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -120px -133px;
+	background-size: 512px 256px;
+	width: 8px;
+	height: 18px;
+	margin-top: 1px;
+	left:-1px;
+}
+
+.l {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -20px -137px;
+	background-size: 512px 256px;
+	width: 8px;
+	height: 18px;
+    margin-top: 1px;
+	left:-1px;
+}
+
+.o{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -367px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	margin-top:4px;
+	left:0px;
+}
+
+.p{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -226px -112px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 18px;
+	margin-top:6px;
+	left:0px;
+}
+
+.t{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -222px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 18px;
+	margin-top:2px;
+	left:-1px;
+}
+
+.v{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -466px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.w{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -426px -130px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.whitespace {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -510px -130px;
+	background-size: 512px 256px;
+	width: 3px;
+	height: 14px;
+	margin-top:4px;
+}
+
+.exclamation{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/lettersheader.png) no-repeat -137px -72px;
+	background-size: 512px 256px;
+	width: 7px;
+	height: 19px;
+}
+
+
+
+
+
+
+
+/* Header Letters Shadow */ 
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* *************************** */
+
+.A::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -394px -90px;
+    background-size: 512px 256px;
+    width: 13px;
+    height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.U::before {
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -163px -72px;
+	background-size: 512px 256px;
+	width: 13px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.N::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -162px -92px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+
+.a::before {
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -355px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.b::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -375px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.d::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -327px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+
+.e::before {
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -379px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.i::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -120px -133px;
+	background-size: 512px 256px;
+	width: 8px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+.o::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -367px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+.p::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -226px -112px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+.t::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -222px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+.l::before {
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -20px -137px;
+	background-size: 512px 256px;
+	width: 8px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+
+
+.v::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -466px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.w::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -426px -130px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+
+.exclamation::before{
+	content: "";
+	display: block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -137px -72px;
+	background-size: 512px 256px;
+	width: 7px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+
+
+
+/* Title Letters */ 
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* *************************** */
+.A.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -394px -90px;
+    background-size: 512px 256px;
+    width: 13px;
+    height: 18px;
+	margin-top: 1px;
+}
+
+.C.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -481px -49px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 19px;
+}
+
+
+.M.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -113px -93px;
+	background-size: 512px 256px;
+	width: 15px;
+	height: 18px;
+	margin-top: 1px;
+}
+
+.N.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -162px -92px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 18px;
+	margin-top: 1px;
+}
+
+.S.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -48px -73px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 19px;
+}
+
+.T.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -408px -90px;
+	background-size: 512px 256px;
+	width: 12px;
+	height: 18px;
+	margin-top: 1px;
+}
+
+.a.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -355px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	margin-top:4px;
+	left:0px;
+}
+
+.b.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -375px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	left:0px;
+}
+
+.d.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -327px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	left:0px;
+}
+
+.e.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -379px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.h.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -26px -117px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 18px;
+	margin-top: 1px;
+	left:0px;
+}
+
+.i.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -120px -133px;
+	background-size: 512px 256px;
+	width: 8px;
+	height: 18px;
+	margin-top: 1px;
+	left:0px;
+}
+.o.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -367px -131px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 15px;
+	margin-top:4px;
+	left:0px;
+}
+.l.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -441px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+    margin-top: 1px;
+	left:0px;
+}
+
+.n.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -441px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.s.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -400px -130px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.t.title {
+	display:block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -222px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 18px;
+	margin-top: 2px;
+	left:0px;
+}
+
+.v.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -466px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+.w.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -426px -130px;
+	background-size: 512px 256px;
+	width: 14px;
+	height: 14px;
+	margin-top:5px;
+	left:0px;
+}
+
+
+.exclamation.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -137px -72px;
+	background-size: 512px 256px;
+	width: 7px;
+	height: 19px;
+	left:0px;
+}
+
+.dot.title{
+	display: block;
+	position:relative;
+	float:left;
+	background: url(img/letterstitle.png) no-repeat -312px -148px;
+	background-size: 512px 256px;
+	width: 6px;
+	height: 6px;
+	margin-top: 13px;
+	left:0px;
+}
+
+
+
+/* Title Letters Shadow*/ 
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* *************************** */
+
+.C.title::before {
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -481px -49px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+.M.title::before{
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -113px -93px;
+	background-size: 512px 256px;
+	width: 15px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%);
+}
+
+.S.title::before{
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -48px -73px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.T.title::before{
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -408px -90px;
+	background-size: 512px 256px;
+	width: 12px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.d.title::before{
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:-1;
+	background: url(img/lettersshadow.png) no-repeat -327px -71px;
+	background-size: 512px 256px;
+	width: 10px;
+	height: 19px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.e.title::before {
+	content: "";
+	display:block;
+	position:absolute;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -379px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+.h.title::before{
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -26px -117px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.n.title::before {
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -441px -130px;
+	background-size: 512px 256px;
+	width: 11px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.s.title::before {
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -400px -130px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 14px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}
+
+.t.title::before {
+	content: "";
+	display: block;
+	position:relative;
+	z-index:-1;
+	float:left;
+	background: url(img/lettersshadow.png) no-repeat -222px -132px;
+	background-size: 512px 256px;
+	width: 9px;
+	height: 18px;
+	top:2px;
+	left:2px;
+	filter: brightness(10%)
+}

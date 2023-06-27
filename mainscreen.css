@@ -1,0 +1,511 @@
+:root {
+    --myfont: "Hammerhead", Verdana, Arial;
+    --color-primary: #D5D29E;
+    --color-secondary: #CCCCC2;
+}
+
+@font-face {
+    font-family: Hammerhead;
+    src: url(fonts/HammerheadMedium.ttf) format('truetype');
+}
+@font-face {
+    font-family: Spireq;
+    src: url(fonts/SPIREQ_L.TTF) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("img/background.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 2%;
+    width: 95vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.sidebar {
+    width: 22%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-left: 1rem;
+}
+
+.sidebar::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background: url("img/sidebar.svg") repeat-y;
+    background-size: 100%;
+    background-position: 0 80px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.sidebar__logo {
+    background: url(img/mainscreentext.png) no-repeat;
+    width: 100%;
+    height: 40%;
+    margin-top: 2rem;
+    background-size: 100%;
+}
+
+.sidebar__menu {}
+
+.menu__list,
+.external-links__list {
+    list-style: none;
+}
+
+.menu__link,
+.external-links__link {
+    text-decoration: none;
+}
+
+.menu__list {
+    padding-left: 4rem;
+}
+
+.menu__option {
+    position: relative;
+}
+
+.menu__link {
+    cursor: default;
+    font-family: var(--myfont);
+    font-size: 1.7rem;
+    line-height: 3rem;
+    letter-spacing: 1.8px;
+    color: var(--color-primary);
+}
+
+.menu__option::after{
+    position: absolute;
+    content: "";
+    background: url('img/radiobuttons.png') no-repeat -1048px -685px;
+	width: 456px;
+	height: 76px;
+    top: -12px;
+    left: -97px;
+    transform: scale(0.68);
+    opacity: 0;
+    pointer-events: none;
+}
+.menu__option:hover::after,
+.menu__option:hover .menu__link {
+    opacity: 1;
+    color: var(--color-secondary);
+}
+
+
+
+.sidebar__external-links {
+    width: 100%;
+}
+
+.external-links__list {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 78%;
+    padding-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.external-links__option {
+    flex: 1 1 0px;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+
+.external-links__option::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: url('img/radiobuttons.png') no-repeat -362px -1028px;
+    width: 122px;
+    height: 100px;
+    top: -80px;
+    left:-20px;
+    transform: scale(.6);
+}
+
+.external-links__option:nth-child(1)::after{
+    position: absolute;
+    z-index: 4;
+    content: "";
+    background: url('img/buttons.png') no-repeat -285px -297px;
+    width: 232px;
+    height: 216px;
+    top: -138px;
+    left: -76px;
+    transform: scale(.14);
+}
+.external-links__option:nth-child(2)::after{
+    position: absolute;
+    z-index: 4;
+    content: "";
+    background: url('img/buttons.png') no-repeat -12px -804px;
+    width: 232px;
+    height: 216px;
+    top: -138px;
+    left: -76px;
+    transform: scale(.14);
+}
+.external-links__option:nth-child(3)::after{
+    position: absolute;
+    z-index: 4;
+    content: "";
+    background: url('img/buttons.png') no-repeat -545px -290px;
+    width: 232px;
+    height: 216px;
+    top: -138px;
+    left: -76px;
+    transform: scale(.14);
+}
+.external-links__option:nth-child(4)::after{
+    position: absolute;
+    z-index: 4;
+    content: "";
+    background: url('img/buttons.png') no-repeat -1595px -282px;
+    width: 232px;
+    height: 216px;
+    top: -138px;
+    left: -76px;
+    transform: scale(.14);
+}
+
+.external-links__option:hover::before{  
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: url('img/radiobuttons.png') no-repeat -1698px -998px;
+	width: 128px;
+	height: 119px;
+    top: -90px;
+    left:-21px;
+    transform: scale(.6);
+    color: var(--color-secondary);
+}
+
+.external-links__option:hover .external-links__link{
+    color: var(--color-secondary);
+
+}
+
+.external-links__option:active::before{
+    position: absolute;
+    z-index: 3;
+    content: "";
+    background: url('img/radiobuttons.png') no-repeat -1696px -861px;
+	width: 130px;
+	height: 113px;
+    transform: scale(.6);
+    color: var(--color-secondary);
+}
+
+.external-links__option .external-links__option:active::before{
+   top:10px;
+}
+
+.external-links__link {
+    position: relative;
+    cursor: default;
+    font-family: Spireq, serif, Verdana, Geneva, Tahoma;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+
+.external-links__link::before {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    cursor: default;
+    font-family: Spireq, serif, Verdana, Geneva, Tahoma;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    top:2px;
+    left:-2px;
+    filter: brightness(10%);
+}
+
+.main__layout {
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-self: flex-end;
+    height: 55%;
+}
+
+.main__carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 66%;
+    height: 100%;
+}
+
+.carousel__border {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    left: -14%;
+    top: -6%;
+    width: 132%;
+    height: 104%;
+}
+
+.carousel__image {
+    position: absolute;
+    z-index: -1;
+    left: 4.9%;
+    top: 5%;
+    width: 94%;
+    height: 83%;
+}
+
+
+.carousel__announcement {
+    height: 4rem;
+    width: 100%;
+    padding-top: 7%;
+    padding-left: 23.5%;
+    color: var(--color-primary);
+    text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8);
+    transform: scale(1.6);
+    pointer-events: none;
+}
+
+.carousel__title {
+    padding-left: 10%;
+    margin-top: 29%;
+    height:10%;
+    color: var(--color-secondary);
+    text-shadow: 0.1875rem 0rem 0.4375rem rgba(209, 204, 188, 0.8);
+    transform: scale(1.2);
+    pointer-events: none;
+}
+
+.carousel__button {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 6%;
+    height: 9%;
+    top: 67%;
+    left: 85%;
+    background: url('img/radiobuttons.png') no-repeat -362px -1028px;
+	width: 122px;
+	height: 100px;
+    transform: scale(0.6);
+    border: none;
+}
+
+.carousel__button::after{
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background: url('img/buttons.png') no-repeat -796px -278px;
+	width: 253px;
+	height: 244px;
+    top: -68px;
+    left: -60px;
+    transform: scale(0.2);
+    opacity: 0.8;
+}
+
+.carousel__button:active{
+    top:67.5%;
+    background: url('img/radiobuttons.png') no-repeat -1696px -861px;
+    width: 122px;
+	height: 110px;
+}
+.carousel__button:active::after{
+    top: -60px;
+    opacity: 0.7;
+}
+
+.carousel__slider-radios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 4;
+    width: 70%;
+    height:50px;
+    margin-left:18%;
+}
+
+.slider-radios__radio{
+    display: block;
+    position: relative;
+    cursor: default;
+    top:3px;
+    padding-left: 2px;
+    opacity: 1;
+
+
+    background-image: url("img/radiobuttons.png");
+    height:calc(60px / 1.25);
+    width:calc(67px / 1.25);
+    background-position:calc(4/5 * -156px) calc(4/5 * -1073px);
+    background-size:calc(2048px / 1.25) calc(2048px / 1.25); 
+}
+
+.slider-radios__input{
+    opacity: 0;
+}
+
+.slider-radios__radio:active:has(.slider-radios__input:not(:checked)){
+    top: 0px;
+}
+
+.slider-radios__radio:has(.slider-radios__input:checked) {
+    background: url('img/radiobuttons.png') no-repeat;
+	height:calc(60px / 1.25);
+    width:calc(67px / 1.25);
+    background-position:calc(4/5 * -228px) calc(4/5 * -1073px);
+    background-size:calc(2048px / 1.25) calc(2048px / 1.25); 
+}
+
+.slider-radios__radio:has(.slider-radios__input:hover.slider-radios__input:not(:checked)) {
+    background: url('img/radiobuttons.png') no-repeat;
+	height:calc(60px / 1.25);
+    width:calc(67px / 1.25);
+    background-position:calc(4/5 * -1940px) calc(4/5 * -1045px);
+    background-size:calc(2048px / 1.25) calc(2048px / 1.25); 
+}
+
+
+.main__ads {
+    background: url();
+    display: block;
+    width: 33%;
+    height: 100%;
+}
+
+.ads__ad {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 45%;
+}
+
+.ad__border {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    width: 146%;
+    height: 126%;
+    top: -13%;
+    left: -18%;
+}
+
+.ad__image {
+    position: absolute;
+    z-index: -1;
+    width: 87%;
+    height: 82%;
+    top: 9%;
+    left: 11%;
+
+}
+
+.ad__announcement {
+    width: 100%;
+    height: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    padding-left: 14%;
+    padding-top: 8%;
+    color: var(--color-primary);
+    text-shadow: 0.1875rem 0rem 0.4375rem rgba(81, 67, 21, 0.8);
+}
+
+.ad__title {
+    width: 60%;
+    padding-top: 14%;
+    padding-left: 14%;
+    color: var(--color-secondary);
+    text-shadow: 0.1875rem 0rem 0.4375rem rgba(209, 204, 188, 0.8);
+}
+
+.ad__button {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 8%;
+    height: 13%;
+    top: 50%;
+    left: 73%;
+    border: none;
+    background: url('img/radiobuttons.png') no-repeat -362px -1028px;
+	width: 122px;
+	height: 100px;
+    transform: scale(0.48);
+}
+
+.ad__button::after{
+    content: "";
+    position: absolute;
+    z-index: 3;
+    background: url('img/buttons.png') no-repeat -796px -278px;
+	width: 253px;
+	height: 244px;
+    top: -68px;
+    left: -60px;
+    transform: scale(0.18);
+    opacity: 0.8;
+}
+
+.ad__button:active{
+    top:52.5%;
+    background: url('img/radiobuttons.png') no-repeat -1696px -861px;
+    width: 122px;
+	height: 110px;
+}
+.ad__button:active::after{
+    top: -60px;
+    opacity: 0.7;
+}
+
+.footer {
+    height: 18%;
+}
+
+.text {
+    background-color: white;
+    padding: 2rem;
+    color: var(--color-primary);
+    font-size: 8rem;
+    text-shadow: -0.3125rem 0rem black, -0.3125rem -0.1875rem black;
+}
+
+.footer__title{
+
+}
