@@ -381,7 +381,7 @@ body {
 }
 
 .slider-radios__radio:active:has(.slider-radios__input:not(:checked)){
-    top: 0px;
+    top: 1vh;
 }
 
 .slider-radios__radio:has(.slider-radios__input:checked) {
